@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/resources.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <title>Team - UTCN ITID</title>
+  <script type="module" crossorigin src="./assets/script-sXKe5TBD.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/script-BBhELmr7.css">
+
+  <style>
+    .profiles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .profile-card {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+      border-top: 4px solid #b51c1c;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: box-shadow 0.2s ease;
+    }
+    .profile-card:hover {
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+    .profile-image {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #eaeaea;
+      background-color: #f9f9f9;
+    }
+    .profile-card h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .profile-title {
+      font-weight: normal;
+      color: #b51c1c;
+      font-size: 0.9em;
+    }
+    .profile-detail {
+      margin: 3px 0;
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .profile-detail a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    .profile-detail a:hover {
+      text-decoration: underline;
+    }
+    .profile-bio {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #eaeaea;
+      font-size: 13.5px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    #dynamic-sidebar a.active-sidebar-btn {
+      background-color: #8c1414 !important;
+      font-weight: bold;
+
+    }
+  </style>
+</head>
+
+<body data-menu-title="Team">
+
+  <div id="site-header"></div>
+
+  <section class="hero small-hero">
+    <div class="hero__content">
+      <h1 class="hero__title" id="hero-title">Our Teams</h1>
+      <p id="hero-subtitle">Meet the people behind the initiatives</p> 
+    </div>
+  </section>
+
+  <section class="main-layout">
+    
+    <aside class="sidebar">
+      <h3 class="sidebar__title" id="sidebar-title">Teams</h3>
+      <nav class="sidebar__nav">
+        <ul class="sidebar__menu" id="dynamic-sidebar">
+          <li><p style="padding-left: 1rem; color: #888;">Loading teams...</p></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="content-area">
+      <div class="article-content" id="dynamic-content">
+        <p class="article-content__paragraph">Loading content from API...</p>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="./assets/team-handler.js"></script>
+</body>
+
+</html>

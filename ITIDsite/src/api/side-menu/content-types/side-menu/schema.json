@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "side-menus",
+  "info": {
+    "singularName": "side-menu",
+    "pluralName": "side-menus",
+    "displayName": "Side Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "menu_items": {
+      "type": "dynamiczone",
+      "components": [
+        "basic.text-link-pair"
+      ]
+    }
+  }
+}

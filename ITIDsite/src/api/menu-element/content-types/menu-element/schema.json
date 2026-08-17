@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu-elements",
+  "info": {
+    "singularName": "menu-element",
+    "pluralName": "menu-elements",
+    "displayName": "Menu Element"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subpages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "menu_element"
+    }
+  }
+}

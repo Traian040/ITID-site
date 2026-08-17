@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_basic_side_menu_items",
+  "info": {
+    "displayName": "Side Menu Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

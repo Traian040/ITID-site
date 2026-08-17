@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_basic_text_link_pairs",
+  "info": {
+    "displayName": "Text Link Pair"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

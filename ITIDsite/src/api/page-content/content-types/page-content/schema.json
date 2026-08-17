@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page-contents",
+  "info": {
+    "singularName": "page-content",
+    "pluralName": "page-contents",
+    "displayName": "Page Content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "text_link_pairs": {
+      "type": "component",
+      "component": "basic.text-link-pair",
+      "repeatable": true
+    }
+  }
+}
