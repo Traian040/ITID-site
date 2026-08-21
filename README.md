@@ -33,10 +33,10 @@ docker compose up -d
 ```
 Wait a moment for the containers to build and initialize.
 
-### Step 4: Import the Project Data
-To populate the database and media assets with the existing project content, you will need the encrypted export file (e.g., `export_20260817112909.tar.gz.enc`).
+### Step 4: Import the Project Data(if you have previous data that you want to save)
+To populate the database and media assets with the existing project content, you will need the encrypted export file.
 1. Place the `.tar.gz.enc` file directly inside the `ITIDsite` folder.
-2. Run the import command: [^4]
+2. Run the import command:
    ```bash
    docker exec -it strapi npm run strapi import -- --file export_20260817112909.tar.gz.enc
    ```
